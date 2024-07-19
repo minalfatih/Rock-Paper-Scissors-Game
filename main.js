@@ -89,7 +89,35 @@ if (location.href.includes("index.html")) {
 
   play();
 
-  rule("./images/image-rules-bonus.svg");
+  document.querySelector("#rule").onclick = function () {
+
+    let overlay = document.createElement("div");
+
+    overlay.className = "overlay";
+    let imageBox = document.createElement("div");
+    imageBox.className = "image";
+    overlay.appendChild(imageBox);
+    let name = document.createElement("div");
+    name.className = "name";
+    imageBox.appendChild(name);
+    let text = document.createElement("p");
+    text.textContent = "Rules";
+    name.appendChild(text);
+    let remove = document.createElement("img");
+    remove.className = "remove";
+    remove.src = "./images/icon-close.svg";
+    name.appendChild(remove);
+    let ruleImage = document.createElement("img");
+    ruleImage.className = "rule-image";
+    setTimeout(() => {
+      imageBox.classList.add("active");
+      ruleImage.classList.add("active");
+    }, 1000);
+    ruleImage.src = "./images/image-rules-bonus.svg";
+    ruleImage.alt = "image-of-rule";
+    imageBox.appendChild(ruleImage);
+    document.body.appendChild(overlay);
+  }
 } else {
   let gameArray = [];
   let pickedName = ["scissors", "paper", "rock"];
@@ -149,7 +177,35 @@ if (location.href.includes("index.html")) {
 
     play();
 
-    rule("./images/image-rules.svg");
+    document.querySelector("#rule").onclick = function () {
+
+    let overlay = document.createElement("div");
+
+    overlay.className = "overlay";
+    let imageBox = document.createElement("div");
+    imageBox.className = "image";
+    overlay.appendChild(imageBox);
+    let name = document.createElement("div");
+    name.className = "name";
+    imageBox.appendChild(name);
+    let text = document.createElement("p");
+    text.textContent = "Rules";
+    name.appendChild(text);
+    let remove = document.createElement("img");
+    remove.className = "remove";
+    remove.src = "./images/icon-close.svg";
+    name.appendChild(remove);
+    let ruleImage = document.createElement("img");
+    ruleImage.className = "rule-image";
+    setTimeout(() => {
+      imageBox.classList.add("active");
+      ruleImage.classList.add("active");
+    }, 1000);
+    ruleImage.src = "./images/image-rules.svg";
+    ruleImage.alt = "image-of-rule";
+    imageBox.appendChild(ruleImage);
+    document.body.appendChild(overlay);
+  };
   });
 }
 
