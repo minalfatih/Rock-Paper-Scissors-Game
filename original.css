@@ -1,0 +1,98 @@
+main {
+  justify-content: flex-start;
+  gap: 20px;
+  padding-top: 40px;
+}
+header ul li span {
+  font-size: 2rem;
+}
+@media (max-width: 767px) {
+  header ul li span {
+    font-size: 1rem;
+  }
+}
+.game-picked {
+  height: 500px;
+}
+@media (max-width: 990px) {
+  .game-picked {
+    justify-content: flex-end;
+  }
+}
+@media (max-width: 576px) {
+  .game-picked {
+    height: 420px;
+  }
+}
+.game {
+  background-image: url(./images/bg-triangle.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100%;
+  position: relative;
+}
+.game > div {
+  width: 180px;
+  height: 180px;
+  border-width: 20px;
+}
+.game > div::after {
+  bottom: -30px;
+}
+@media (max-width: 767px) {
+  .game > div {
+    width: 130px;
+    height: 130px;
+    border-width: 15px;
+  }
+  .game > div::after {
+    bottom: -22px;
+  }
+}
+@media (max-width: 576px) {
+  .game > div {
+    width: 100px;
+    height: 100px;
+    border-width: 12px;
+  }
+  .game > div::after {
+    bottom: -20px;
+  }
+}
+.game > div .image img {
+  width: 45%;
+}
+.game .rock {
+  left: 40%;
+}
+.game .paper {
+  left: 20%;
+  top: 10%;
+}
+.game .scissors {
+  top: 10%;
+  left: 60%;
+}
+@media (max-width: 990px) {
+  .btn {
+    align-items: center;
+  }
+}
+@media (max-width: 576px) {
+  .game .rock {
+    bottom: 15%;
+  }
+  .game .paper {
+    top: 5%;
+    left: 10%;
+  }
+  .game .scissors {
+    top: 5%;
+    left: 67%;
+  }
+}
+.overlay .image {
+  padding: 40px;
+  width: 400px;
+  height: 400px;
+}

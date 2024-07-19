@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Rock, Paper, Scissors game in this website you can play the master and the original game"/>
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Frontend Mentor | Rock, Paper, Scissors</title>
+  </head>
+  <body>
+    <main>
+      <header>
+        <ul>
+          <li><span>Rock</span></li>
+          <li><span>Paper</span></li>
+          <li><span>Scissors</span></li>
+          <li><span>Lizard</span></li>
+          <li><span>Spock</span></li>
+        </ul>
+        <div class="score">
+          <p>Score</p>
+          <span class="num">0</span>
+        </div>
+      </header>
+
+      <div class="game-picked">
+        <div class="pick">
+          <p>You Picked</p>
+          <p>The House Picked</p>
+        </div>
+
+        <div class="result">
+          <p class="win">You Win</p>
+          <p class="lose">You Lose</p>
+          <p class="draw">Draw</p>
+          <button id="play">Play Again</button>
+        </div>
+
+        <section class="game">
+          <div class="rock">
+            <div class="image">
+              <img src="./images/icon-rock.svg" alt="icon-rock" />
+            </div>
+          </div>
+          <div class="paper">
+            <div class="image">
+              <img src="./images/icon-paper.svg" alt="icon-paper" />
+            </div>
+          </div>
+          <div class="scissors">
+            <div class="image">
+              <img src="./images/icon-scissors.svg" alt="icon-scissors" />
+            </div>
+          </div>
+          <div class="lizard">
+            <div class="image">
+              <img src="./images/icon-lizard.svg" alt="icon-lizard" />
+            </div>
+          </div>
+          <div class="spock">
+            <div class="image">
+              <img src="./images/icon-spock.svg" alt="icon-spock" />
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <div class="btn">
+        <button id="rule">Rules</button>
+        <a href="original.html">Original</a>
+      </div>
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>
